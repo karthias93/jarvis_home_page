@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis AI Bot</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #1a1a1a; color: white; }
+        img { width: 250px; border-radius: 10px; }
+        .container { padding: 20px; }
+        .btn { 
+            background: #0088cc; color: white; padding: 12px 24px; 
+            text-decoration: none; border-radius: 5px; font-size: 18px; 
+            display: inline-block; margin-top: 20px; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn4.cdn-telegram.org/file/mx4wwp-xhIEXrfLs4JqoytccCa035S9BGiAOQegn-r9z4A6u9Jgh26-J7QeHuNzdv7pu4WN8aGtngg4DRlfe1F4QaughzgLDcSqxu818Xy9fgKNnk0EMtXkf_BTIJlfSJY_twptjq77rZelezNnasiKrPz98Nrr4xJ9WQIaarolhRyss7-kBcRXFxGtaqAzC9d33U9K11xH2_p6Iy5Mz-L9YKVYiLKZ9gLZfBm2vDpt8JUNwGqycK3NwHbxwHVsdTd1IM62PIbvX7xMLrBDifCD3YRoQhSegD6p05JHmD6xGQergJBHA9MaAuPvMKfT2ql2yYZMpla6NDqYX7QpIvA.jpg" alt="Jarvis AI">
+        <h2>Jarvis AI Bot 🤖</h2>
+        <p>Jarvis is an AI-powered chatbot that learns your communication style and mimics it in Telegram chats.</p>
+        <p>✨ Features:</p>
+        <p>🔹 Learns your tone, phrases, and style<br>🔹 Generates replies that sound like you<br>🔹 Adapts to your unique way of chatting</p>
+        <a class="btn" onclick="startBot()">Start Now</a>
+    </div>
+
+    <script>
+        function startBot() {
+            const tg = window.Telegram.WebApp;
+            tg.close(); // Closes the mini app and returns to the bot chat
+        }
+    </script>
+</body>
+</html>
